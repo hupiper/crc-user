@@ -5,7 +5,7 @@ It will work with any OpenShift cluster.
 
 I took what had been done in this [blog post](https://developers.redhat.com/blog/2020/07/03/automate-workshop-setup-with-ansible-playbooks-and-codeready-workspaces/). The script wasn't working for me, and the htpasswd module in ansible has been removed for a community version, so I'm doing it manually. It's quick and doesn't really need to be automated. 
 ***
-Run the `usersetup.sh` script. That creates the user-secret secret.
+Run the `usersetup.sh` script. That creates the user-secret secret. I use the username as the password for each entry. Change this for your needs. 
 
 Edit the oauth file to use the secret with the htpasswd identity provider.  
 
