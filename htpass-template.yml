@@ -4,4 +4,4 @@ spec.identityProviders[+]:
   mappingMethod: claim
   htpasswd:
     fileData:
-      name: workshop-user-secret
+      name: user-secret
