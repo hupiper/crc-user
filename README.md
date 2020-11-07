@@ -1,10 +1,10 @@
 # CRC USER
 
-This is a playbook to set up the htpasswd identity provider when using CRC (CodeReady Containers).
+This is a script and some commands to set up the htpasswd identity provider when using CRC (CodeReady Containers).
 It will work with any OpenShift cluster.
 
-I took what had been done in this [blog post](https://developers.redhat.com/blog/2020/07/03/automate-workshop-setup-with-ansible-playbooks-and-codeready-workspaces/) and turned it into an ansible playbook.
-
+I took what had been done in this [blog post](https://developers.redhat.com/blog/2020/07/03/automate-workshop-setup-with-ansible-playbooks-and-codeready-workspaces/). The script wasn't working for me, and the htpasswd module in ansible has been removed for a community version, so I'm doing it manually. It's quick and doesn't really need to be automated. 
+***
 Run the `usersetup.sh` script. That creates the user-secret secret.
 
 Edit the oauth file to use the secret with the htpasswd identity provider.  
