@@ -13,10 +13,10 @@ The command to edit that file is:
 
 `oc -n openshift-config edit oauth cluster`
 
-It should end up looking like this (look for fileData.name for htpasswd):
+It should end up looking like this (look for fileData.name for htpasswd). The only thing I changed was the name of the secret to match the secret I created:
 
 
-```
+```bash
 apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
